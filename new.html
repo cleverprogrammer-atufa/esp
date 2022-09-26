@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Malayan Council</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=0.4">
+    <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.11/dist/index.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/javascript">
+        ddsmoothmenu.init({
+            mainmenuid: "smoothmenu1",
+            orientation: 'h',
+            classname: 'ddsmoothmenu',
+            contentsource: "markup"
+        })
+    </script>
+</head>
+<body>
+<header class="bg-white shadow">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mobile text-center" style="display: none;">
+                <a href="index.html"><img src="img/logo.png" class="img-fluid logo" width="130" alt=""></a>
+                <a href="https://wa.me/6590024414" target="_blank" class="whatsapp">
+                    <img src="img/whatsapp--v1.png" />
+                </a>
+            </div>
+            <a class="animateddrawer" id="ddsmoothmenu-mobiletoggle" href="#">
+                <span></span>
+            </a>
+            <div id="smoothmenu1" class="ddsmoothmenu">
+                <ul>
+                    <li class="mr-lg-4 mr-md-3 drop"><a href="story.html">our story</a></li>
+                    <li class="mr-lg-4 mr-md-3 drop">
+                        <a href="">outlets</a>
+                        <ul>
+                            <li><a href="dunlop.html">dunlop</a></li>
+                            <li><a href="bussorah.html">Bussorah</a></li>
+                            <li><a href="winstedt.html">winstedt</a></li>
+                            <li><a href="new.html">Esplanade</a></li>
+                            <li class="mbl-li"><a href="#">Fullerton <br><span class="cmng-soon">(coming
+                              soon)</span></a>
+                            </li>
+                            <li><a href="cakes.html">cakes</a></li>
+                        </ul>
+                    </li>
+                    <li class="mr-lg-4 mr-md-3 drop"><a href="events.html">events</a></li>
+                    <li><a href="index.html" class="desktop"><img src="img/logo.png" class="img-fluid logo logo_home" width="150" alt=""></a></li>
+                    <li class="drop"><a href="Maintenance.html">updates</a></li>
+                    <li class="drop"><a href="fortune.html">the fortune cookie</a></li>
+                    <li class="drop"><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<style>
+    button.btn_360 {
+        outline: 0;
+        background: #fff;
+        border: 0;
+        position: absolute;
+        padding: 10px 20px;
+        margin-top: 12px;
+        right: 28px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        border-radius: 23px;
+    }
+    button.btn_360 svg {
+        margin-right: 10px;
+    }
+    button.btn_360:hover {
+        background: #F1F1F1;
+    }
+    .iframe-lightbox .content {
+        /*padding: 20% 0% 20% 0% ;*/
+    }
+
+    @media(max-width:527px){
+        button.btn_360 {
+            bottom: 13px;
+            right: 50%;
+            transform: translateX(50%);
+            display: inline-block;
+            width: 60px;
+        }
+        .iframe-lightbox .content-holder {
+            width: 100% !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin-right: 0 !important;
+        }
+        .mbl-hd{
+            display: none;
+        }
+        button.btn_360{
+            padding: 10px 16px;
+        }
+        .iframe-lightbox .content{
+            padding: 100% !important;
+        }
+        .iframe-lightbox .content>.body{
+            width:50% !important;
+        }
+    }
+    @media (min-width: 528px) and (max-width: 767px) {
+        .iframe-lightbox .content{
+            height: 0;
+            position: relative;
+            padding-bottom: 85% !important;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        .iframe-lightbox .content{
+            height: 0;
+            position: relative;
+            padding-bottom: 65% !important;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1024px) {
+        .iframe-lightbox .content{
+            height: 0;
+            position: relative;
+            padding-bottom: 55% !important;
+        }
+    }
+    .iframe-lightbox,
+    .iframe-lightbox .backdrop {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .iframe-lightbox {
+        display: none;
+        position: fixed;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
+        z-index: 999999;
+    }
+    .iframe-lightbox .backdrop {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        cursor: default;
+    }
+    .iframe-lightbox .content-holder {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-right: -50%;
+    }
+    .iframe-lightbox .content {
+        height: 0;
+        position: relative;
+        padding-bottom: 40%;
+    }
+    .iframe-lightbox .content>.body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .iframe-lightbox .content>.body .half-circle-spinner,
+    .iframe-lightbox .content>.body .half-circle-spinner * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .iframe-lightbox .content>.body .half-circle-spinner {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        position: relative;
+        margin: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .iframe-lightbox .content>.body .half-circle-spinner .circle {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        border: calc(60px / 10) solid transparent;
+    }
+    .iframe-lightbox .content>.body .half-circle-spinner .circle.circle-1 {
+        border-top-color: #FFFFFF;
+        -webkit-animation: half-circle-spinner-animation 1s infinite;
+        animation: half-circle-spinner-animation 1s infinite;
+    }
+    .iframe-lightbox .content>.body .half-circle-spinner .circle.circle-2 {
+        border-bottom-color: #FFFFFF;
+        -webkit-animation: half-circle-spinner-animation 1s infinite alternate;
+        animation: half-circle-spinner-animation 1s infinite alternate;
+    }
+    @-webkit-keyframes half-circle-spinner-animation {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes half-circle-spinner-animation {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    .iframe-lightbox .content>.body.is-loaded .half-circle-spinner {
+        display: none;
+    }
+    .iframe-lightbox iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        box-shadow: 0.267rem 0.267rem 0.267rem 0 rgba(3, 3, 3, 0.3);
+        /*!
+        * in js: iframe onload="this.style.opacity=1;" style="opacity:0;border:none;"
+        */
+        /* opacity: 0; */
+        -webkit-transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
+    }
+    .iframe-lightbox.is-showing {
+        display: block;
+    }
+    .iframe-lightbox.is-opened {
+        opacity: 1;
+    }
+    .iframe-lightbox .btn-close {
+        position: fixed;
+        top: 0.625em;
+        right: 0.625em;
+        width: 1.500em;
+        height: 1.500em;
+    }
+    .iframe-lightbox .btn-close:before,
+    .iframe-lightbox .btn-close:after {
+        content: " ";
+        width: 0.125em;
+        height: 1.500em;
+        position: absolute;
+        right: 0.625em;
+        background-color: #FFFFFF;
+    }
+    .iframe-lightbox .btn-close:before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .iframe-lightbox .btn-close:after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    body.iframe-lightbox--open {
+        overflow: hidden;
+    }
+</style>
+<section class="esp-section">
+    <div class="container1">
+        <div class="rectangle8" style="position:relative;">
+            <button class="btn_360 iframe-lightbox-link" href="https://www.google.com/maps/embed?pb=!4v1663233532381!6m8!1m7!1sww18wr6tgz3khg_wBJk3-g!2m2!1d1.377078548070253!2d103.8873905726134!3f185.34648!4f0!5f0.7820865974627469">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 3.75C18.75 5.82129 17.0684 7.5 15 7.5C12.9316 7.5 11.25 5.82129 11.25 3.75C11.25 1.67871 12.9316 0 15 0C17.0684 0 18.75 1.67871 18.75 3.75ZM16.875 9.375C18.9434 9.375 20.625 11.0566 20.625 13.125V15.9375C20.625 16.9746 19.7871 17.8125 18.75 17.8125H18.6445L18 23.6426C17.8945 24.5918 17.0918 25.3125 16.1367 25.3125H13.8633C12.9082 25.3125 12.1055 24.5918 12 23.6426L11.3555 17.8125H11.25C10.2129 17.8125 9.375 16.9746 9.375 15.9375V13.125C9.375 11.0566 11.0566 9.375 13.125 9.375H16.875ZM3.70723 24.2988C3.5209 24.3926 3.36738 24.4805 3.24199 24.5625C3.0293 24.7031 3.03047 24.9844 3.24258 25.125C3.75879 25.4648 4.59844 25.8164 5.76152 26.1387C8.06836 26.7246 11.3379 27.1875 15 27.1875C18.6621 27.1875 21.9316 26.7246 24.2402 26.1387C25.4004 25.8164 26.2441 25.4648 26.7598 25.125C26.9707 24.9844 26.9707 24.7031 26.7598 24.5625C26.6309 24.4805 26.4785 24.3926 26.291 24.2988C25.3945 23.7949 24.0176 23.4258 22.248 23.0977C21.4805 22.957 20.9766 22.2246 21.1172 21.4629C21.2578 20.7012 21.9902 20.1914 22.752 20.332C24.6562 20.6777 26.3203 21.1641 27.5566 21.7852C28.1719 22.0957 28.7461 22.4707 29.1797 22.9336C29.625 23.4082 30 24.0527 30 24.8438C30 26.0977 29.0918 26.959 28.2949 27.4805C27.4336 28.043 26.2852 28.4941 24.9844 28.8516C22.3711 29.5723 18.8438 30 15 30C11.1562 30 7.62891 29.5723 5.01387 28.8516C3.71719 28.4941 2.56582 28.043 1.70625 27.4805C0.905859 26.959 0 26.0977 0 24.8438C0 24.0527 0.373594 23.4082 0.817969 22.9336C1.25625 22.4707 1.83047 22.0957 2.44453 21.7852C3.67676 21.1641 5.34609 20.6777 7.24805 20.332C8.00977 20.1914 8.74219 20.7012 8.88281 21.4629C8.9707 22.2246 8.51953 22.957 7.75195 23.0977C5.98242 23.4258 4.60371 23.7949 3.70723 24.2988Z" fill="black"/>
+                </svg>
+                 <span class="mbl-hd">360 VIEW</span>
+            </button>
+            <img class="edit-img" src="new-design-page/bg1.png">
+            <img class="mbl-esp" src="new-design-page/bg1-mobile.png">
+        </div>
+        <div class="Esplanade">
+            <div class="text-esplande">
+                <h2 class="section-heading text-color0 w-100">Esplanade</h2>
+                <p class="heading-content newp ">Step into the doors of TMC Esplanade, we bring you class and lush in its finest
+                    details;<br>
+                    where English meets Malaya for a locally unique dining experience.<br><br>
+                    Classy doesn't have to be all grand innit, still a place for you to Talk, Makan & Chill with
+                    your
+                    colleagues and <br>associates with a breathtaking view by the bay over innovative flavours to
+                    keep
+                    you
+                    intrigued.<br><br>
+                    Let this be the talk of the town, and toast over our beautiful spread.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="left-right-section">
+    <div class="row">
+        <div class="col-lg-6 p-0">
+            <img class="image w-100" src="new-design-page/dish1.png">
+        </div>
+        <div class="col-lg-6 p-0">
+            <div class="text2 d-flex flex-column justify-content-center with-border">
+                <h2 class="section-heading text-color1 w-100"> Dish 01</h2>
+                <p class="para-new">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book<br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="left-right-section">
+    <div class="row gx-0 flex-wrap-reverse">
+        <div class="col-lg-6 p-0">
+            <div class="text2 d-flex flex-column justify-content-center with-border">
+                <h2 class="section-heading text-color1 w-100"> Dish 02</h2>
+                <p class="para-new">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book<br><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 p-0">
+            <img class="image w-100" src="new-design-page/dish2.png">
+        </div>
+    </div>
+</section>
+<section class="menu-sec1  signature-section position-relative">
+    <img class="sign-img" src="new-design-page/signature_banner_big.png">
+    <div class="container2">
+        <div >
+            <div>
+                <div class=" centerd1">
+                    <div class="new-heading">Our Signatures</div>
+                    <p class="p-s" style="text-align: center;">Be swooned by the hearty selections of “West-Meets-Malaya” comfort food for a Talk, Makan & Chill
+                        experience.
+                    </p>
+                    <div class="btns mt-5 new22">
+                        <a href="https://themalayancouncil.sg/public/uploads/pdf/newwinstedtmenu_28120_72310.pdf" target="_blank" class="text-uppercase text-color2"><button> view  menu </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- location section -->
+<section class="outlet-page" id="outlet">
+    <div class="container">
+        <div class="row p-2  p-md-3 p-lg-5 text-center">
+            <div class="col-md-6 mx-auto text-center">
+                <h4 class="text-dark font-weight-bold text-uppercase mt-4 text-center">Location</h4>
+                <h4 class="text-dark my-weight text-uppercase mt-3 locat text-center" style="line-height:0.5;"><br> 8 Raffles Avenue #02-14, S039802</h4>
+                <h4 class="text-dark font-weight-bold text-uppercase mt-4 text-center" style="margin-top: 21px!important;">hours</h4>
+                <h4 class="text-dark my-weight text-uppercase mt-3 text-center">DAILY: 11:00AM - 11:00PM <br> LAST ORDER:
+                    10:15PM <br>
+                </h4>
+                <h3 class="mt-5">Free delivery with a minimum purchase of $70</h3>
+                <div class="btns mt-5">
+                    <a href="https://wa.me/6590024414" target="_blank" class="text-uppercase text-color2"><button>whatsapp us now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- location section ends -->
+<footer class="text-center pt-4">
+    <div class="container">
+        <h4>
+            <ul class="pl-0">
+                <li class="d-inline"><a
+                        href="https://book.chope.co/booking?rid=thefortunecookie2009sg&source=rest_themalayancouncil&select_location=1">Make
+                    A reservation I</a>
+                </li>
+                <li class="d-inline"><a href="https://themalayancouncil.sg/events">Book for events I</a></li>
+                <li class="d-inline"><a href="https://wa.me/6590024414">Islandwide delivery</a></li>
+            </ul>
+        </h4>
+        <ul class="pl-0">
+            <li class="d-inline mx-3"><a href="https://www.facebook.com/themalayancouncil/" target="_blank"><i
+                    class="fa fa-facebook-square"></i></a></li>
+            <li class="d-inline mx-3"><a href="https://www.instagram.com/themalayancouncil/?hl=en"
+                                         target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="d-inline mx-3"><a href="https://wa.me/6590024414" target="_blank"><i
+                    class="fa fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-links">
+        <div class="container">
+            <h5>
+                <a href="https://themalayancouncil.sg/outlets/dunlop" class="d-inline">Dunlop I</a><a
+                    href="https://themalayancouncil.sg/outlets/bussorah" class="d-inline"> bussorah I</a>
+                <a href="https://themalayancouncil.sg/outlets/winstedt" class="d-inline">winstedt I</a><a
+                    href="https://themalayancouncil.sg/outlets/cakes" class="d-inline"> cakes I</a>
+                <a href="new.html" class="d-inline">Esplanade I</a>
+                <a href="https://themalayancouncil.sg/fortune" class="d-inline">the fortune cookie </a>
+                <br>
+                <a href="https://book.chope.co/booking?rid=thefortunecookie2009sg&source=rest_themalayancouncil&select_location=1"
+                   class="d-inline">Make A reservation I</a>
+                <a href="https://themalayancouncil.sg/events" class="d-inline">Book for events I</a>
+                <a href="https://wa.me/6590024414" class="d-inline">Islandwide delivery</a>
+            </h5>
+            <h3>© Copyright 2021 The Malayan Council <br> Designed by Designbaxic</h3>
+        </div>
+    </div>
+</footer>
+<script src="https://themalayancouncil.sg/public/frontend/js/jquery.min.js"></script>
+<script src="https://themalayancouncil.sg/public/frontend/js/popper.min.js"></script>
+<script src="https://themalayancouncil.sg/public/frontend/js/bootstrap.min.js"></script>
+<script>
+    /*!
+     * modified Simple lightbox effect in pure JS
+     * @see {@link https://github.com/squeral/lightbox}
+     * @see {@link https://github.com/squeral/lightbox/blob/master/lightbox.js}
+     * @params {Object} elem Node element
+     * @params {Object} [rate] debounce rate, default 500ms
+     * new IframeLightbox(elem)
+     * passes jshint
+     */
+    (function (root, document) {
+        "use strict";
+        var docBody = document.body || "";
+
+        var appendChild = "appendChild";
+        var classList = "classList";
+        var createElement = "createElement";
+        var dataset = "dataset";
+        var getAttribute = "getAttribute";
+        var getElementById = "getElementById";
+        var getElementsByClassName = "getElementsByClassName";
+        var _addEventListener = "addEventListener";
+
+        var containerClass = "iframe-lightbox";
+        var iframeLightboxOpenClass = "iframe-lightbox--open";
+        var iframeLightboxLinkIsBindedClass = "iframe-lightbox-link--is-binded";
+
+        var isLoadedClass = "is-loaded";
+        var isOpenedClass = "is-opened";
+        var isShowingClass = "is-showing";
+
+        var IframeLightbox = function (elem, settings) {
+            var options = settings || {};
+            this.trigger = elem;
+            this.el = document[getElementsByClassName](containerClass)[0] || "";
+            this.body = this.el ? this.el[getElementsByClassName]("body")[0] : "";
+            this.content = this.el ? this.el[getElementsByClassName]("content")[0] : "";
+            this.src = elem[dataset].src || "";
+            this.href = elem[getAttribute]("href") || "";
+            this.dataPaddingBottom = elem[dataset].paddingBottom || "";
+            this.dataScrolling = elem[dataset].scrolling || "";
+            this.rate = options.rate || 500;
+            this.scrolling = options.scrolling;
+            /*!
+             * Event handlers
+             */
+            this.onOpened = options.onOpened;
+            this.onIframeLoaded = options.onIframeLoaded;
+            this.onLoaded = options.onLoaded;
+            this.onCreated = options.onCreated;
+            this.onClosed = options.onClosed;
+            this.init();
+        };
+        IframeLightbox.prototype.init = function () {
+            var _this = this;
+            if (!this.el) {
+                this.create();
+            }
+            var debounce = function (func, wait) {
+                var timeout,
+                    args,
+                    context,
+                    timestamp;
+                return function () {
+                    context = this;
+                    args = [].slice.call(arguments, 0);
+                    timestamp = new Date();
+                    var later = function () {
+                        var last = (new Date()) - timestamp;
+                        if (last < wait) {
+                            timeout = setTimeout(later, wait - last);
+                        } else {
+                            timeout = null;
+                            func.apply(context, args);
+                        }
+                    };
+                    if (!timeout) {
+                        timeout = setTimeout(later, wait);
+                    }
+                };
+            };
+            var logic = function () {
+                _this.open();
+            };
+            if (!this.trigger[classList].contains(iframeLightboxLinkIsBindedClass)) {
+                this.trigger[classList].add(iframeLightboxLinkIsBindedClass);
+                this.trigger[_addEventListener]("click", function (e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    debounce(logic, this.rate).call();
+                });
+            }
+        };
+        IframeLightbox.prototype.create = function () {
+            var _this = this,
+                bd = document[createElement]("div");
+            this.el = document[createElement]("div");
+            this.content = document[createElement]("div");
+            this.body = document[createElement]("div");
+            this.el[classList].add(containerClass);
+            bd[classList].add("backdrop");
+            this.content[classList].add("content");
+            this.body[classList].add("body");
+            this.el[appendChild](bd);
+            this.content[appendChild](this.body);
+            this.contentHolder = document[createElement]("div");
+            this.contentHolder[classList].add("content-holder");
+            this.contentHolder[appendChild](this.content);
+            this.el[appendChild](this.contentHolder);
+            this.btnClose = document[createElement]("a");
+            this.btnClose[classList].add("btn-close");
+            /* jshint -W107 */
+            this.btnClose.setAttribute("href", "javascript:void(0);");
+            /* jshint +W107 */
+            this.el[appendChild](this.btnClose);
+            docBody[appendChild](this.el);
+            bd[_addEventListener]("click", function () {
+                _this.close();
+            });
+            this.btnClose[_addEventListener]("click", function () {
+                _this.close();
+            });
+            root[_addEventListener]("keyup", function (ev) {
+                if (27 === (ev.which || ev.keyCode)) {
+                    _this.close();
+                }
+            });
+            var clearBody = function () {
+                if (_this.isOpen()) {
+                    return;
+                }
+                _this.el[classList].remove(isShowingClass);
+                _this.body.innerHTML = "";
+            };
+            this.el[_addEventListener]("transitionend", clearBody, false);
+            this.el[_addEventListener]("webkitTransitionEnd", clearBody, false);
+            this.el[_addEventListener]("mozTransitionEnd", clearBody, false);
+            this.el[_addEventListener]("msTransitionEnd", clearBody, false);
+            this.callCallback(this.onCreated, this);
+        };
+        IframeLightbox.prototype.loadIframe = function () {
+            var _this = this;
+            this.iframeId = containerClass + Date.now();
+            this.iframeSrc = this.src || this.href || "";
+            /*!
+             * @see {@link https://stackoverflow.com/questions/18648203/how-remove-horizontal-scroll-bar-for-iframe-on-google-chrome}
+             */
+            var iframeHTML = [];
+            iframeHTML.push('<iframe src="' + this.iframeSrc + '" name="' + this.iframeId + '" id="' + this.iframeId + '" onload="this.style.opacity=1;" style="opacity:0;border:none;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" height="166" frameborder="no"></iframe>');
+            /*!
+             * @see {@link https://epic-spinners.epicmax.co/}
+             */
+            /*iframeHTML.push('<div class="spring-spinner"><div class="spring-spinner-part top"><div class="spring-spinner-rotator"></div></div><div class="spring-spinner-part bottom"><div class="spring-spinner-rotator"></div></div></div>');*/
+            iframeHTML.push('<div class="half-circle-spinner"><div class="circle circle-1"></div><div class="circle circle-2"></div></div>');
+            this.body.innerHTML = iframeHTML.join("");
+            (function (iframeId, body) {
+                var iframe = document[getElementById](iframeId);
+                iframe.onload = function () {
+                    /* console.log("loaded iframe:", this.iframeSrc); */
+                    this.style.opacity = 1;
+                    body[classList].add(isLoadedClass);
+                    if (_this.scrolling || _this.dataScrolling) {
+                        iframe.removeAttribute("scrolling");
+                        iframe.style.overflow = "scroll";
+                    } else {
+                        iframe.setAttribute("scrolling", "no");
+                        iframe.style.overflow = "hidden";
+                    }
+                    _this.callCallback(_this.onIframeLoaded, _this);
+                    _this.callCallback(_this.onLoaded, _this);
+                };
+            })(this.iframeId, this.body);
+        };
+        IframeLightbox.prototype.open = function () {
+            this.loadIframe();
+            if (this.dataPaddingBottom) {
+                this.content.style.paddingBottom = this.dataPaddingBottom;
+            } else {
+                this.content.removeAttribute("style");
+            }
+            this.el[classList].add(isShowingClass);
+            this.el[classList].add(isOpenedClass);
+            docBody[classList].add(iframeLightboxOpenClass);
+            this.callCallback(this.onOpened, this);
+        };
+        IframeLightbox.prototype.close = function () {
+            this.el[classList].remove(isOpenedClass);
+            this.body[classList].remove(isLoadedClass);
+            docBody[classList].remove(iframeLightboxOpenClass);
+            this.callCallback(this.onClosed, this);
+        };
+        IframeLightbox.prototype.isOpen = function () {
+            return this.el[classList].contains(isOpenedClass);
+        };
+        IframeLightbox.prototype.callCallback = function (func, data) {
+            if (typeof func !== "function") {
+                return;
+            }
+            var caller = func.bind(this);
+            caller(data);
+        };
+        root.IframeLightbox = IframeLightbox;
+    })("undefined" !== typeof window ? window : this, document);
+
+
+    (function(root, document) {
+        "use strict";
+        [].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function(el) {
+            el.lightbox = new IframeLightbox(el, {
+                onCreated: function() {
+                    /* show your preloader */
+                },
+                onLoaded: function() {
+                    /* hide your preloader */
+                },
+                onError: function() {
+                    /* hide your preloader */
+                },
+                onClosed: function() {
+                    /* hide your preloader */
+                },
+                scrolling: false,
+                /* default: false */
+                rate: 500 /* default: 500 */
+            });
+        });
+    })("undefined" !== typeof window ? window : this, document);
+
+
+</script>
+</body>
+</html>
